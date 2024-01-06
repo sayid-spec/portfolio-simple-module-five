@@ -5,6 +5,9 @@
 }
 :root {
   --primary-clr: #fd6e0a;
+  --dark-01: #181818;
+  --dark-02: #474747;
+  --Dark-03: #757575;
 }
 /* nav styles */
 nav {
@@ -23,7 +26,7 @@ nav li {
 }
 nav a {
   text-decoration: none;
-  color: #474747;
+  color: var(--dark-02, #474747);
   font-size: 20px;
 }
 .primary-btn {
@@ -36,7 +39,7 @@ nav a {
   font-weight: 700;
 }
 .nav-title {
-  color: hsl(0, 0%, 9%);
+  color: #171717;
   font-size: 45px;
   font-weight: 800;
 }
@@ -46,4 +49,46 @@ nav a {
 /* header styles */
 .header {
   background-color: #fff8f3;
+}
+/* BANNER RELATED STYLES */
+.banner {
+  padding: 30px 30px 30px 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner-greeting {
+  color: var(--dark-02, #474747);
+  font-size: 45px;
+
+  font-weight: 600;
+}
+.banner-title {
+  color: var(--Dark-01, #181818);
+
+  font-size: 85px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.banner-content > p {
+  color: var(--Dark-03, #757575);
+
+  font-size: 18px;
+
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+.banner-btns {
+  display: flex;
+  gap: 30px;
+}
+.ContactBtn {
+  background-color: white;
+  color: var(--primary-clr);
+  border: 1px solid var(--primary-clr);
+}
+.profile-pic {
+  width: 500px;
+  flex-shrink: 0;
 }
