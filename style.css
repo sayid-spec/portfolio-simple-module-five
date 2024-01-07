@@ -120,9 +120,12 @@ nav a {
   flex-shrink: 0;
 }
 /* main section styles */
-main {
+.sections {
   max-width: 1140px;
-  margin: 0 auto;
+  margin: 130px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 130px;
 }
 
 /* about section styles */
@@ -130,7 +133,6 @@ main {
 .about {
   padding: 130px;
   background-color: var(--secondary-clr, #fff8f4);
-  margin: 130px 0px;
 }
 .about-info-container {
   display: flex;
@@ -193,4 +195,48 @@ main {
 
   font-weight: 400;
   line-height: 28px; /* 175% */
+}
+
+/* resume related style */
+.resume-column-title {
+  color: var(--Dark-02, #474747);
+
+  font-size: 30px;
+
+  font-weight: 700;
+}
+.resume-container {
+  display: flex;
+  gap: 70px;
+  margin-top: 100px;
+}
+.resume-det-title {
+  color: var(--Dark-02, #474747);
+
+  font-size: 25px;
+
+  font-weight: 700;
+}
+.resume-det-sub {
+  color: var(--Dark-03, #757575);
+
+  font-size: 20px;
+
+  font-weight: 600;
+}
+.resume-det-details {
+  color: var(--Dark-03, #757575);
+
+  font-size: 16px;
+
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+.resume-details {
+  margin: 30px 0;
+  padding-right: 50px;
+}
+.download-cv {
+  text-align: center;
+  margin-top: 50px;
 }
