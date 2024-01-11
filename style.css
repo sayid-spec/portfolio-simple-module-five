@@ -256,6 +256,7 @@ footer {
   color: var(--Dark-01, #181818);
 
   font-size: 35px;
+  margin-bottom: 28px;
 
   font-weight: 700;
   margin-bottom: 20px;
@@ -276,4 +277,20 @@ footer {
 }
 .social-links img {
   width: 24px;
+}
+footer form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 25px;
+}
+footer form input,
+textarea {
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+footer form button {
+  width: 40%;
 }
